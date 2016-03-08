@@ -1,0 +1,21 @@
+/// AlertView 的rac 用法
+__weak typeof(self) wSelf = self;
+[[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+[bkTextView resignFirstResponder];
+if (self.imageArray.count > 0 || [NSString isEmptyString:[Tooles removeAllBlank:bkTextView.text]] || [NSString isEmptyString:singleton.sportIdentify]) {
+UIAlertView* alert = [[UIAlertView alloc] initWithTitle:nil message:NSLocalizedString(@"确定退出编辑？", @"") delegate:nil cancelButtonTitle:NSLocalizedString(@"取消",@"") otherButtonTitles:NSLocalizedString(@"确定", @""), nil];
+[[alert rac_buttonClickedSignal] subscribeNext:^(id x) {
+if([x integerValue] == 1){
+[wSelf.navigationController popViewControllerAnimated:YES];
+}
+}];
+[alert show];
+}else{
+[wSelf.navigationController popViewControllerAnimated:YES];
+}
+}];
+// 导航栏随着tableview的上下滑动 渐变效果。
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+self.navAlpha = MIN(0.99 , self.tableView.contentOffset.y / 100);
+[self.navigationController.navigationBar setBackgroundImage:[self imageWithBgColor:[BlackNavigationColor colorWithAlphaComponent:self.navAlpha]] forBarMetrics:UIBarMetricsDefault];
+}
