@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		8B0C26A2DD9F0B31DE208CCA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B393EBBE4A820C0DDA501D72 /* libPods.a */; };
+		B24B73C21C9003E00070F25E /* ActionDescrptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73C11C9003E00070F25E /* ActionDescrptionViewController.m */; };
+		B24B73E01C90043B0070F25E /* AttributeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73C51C90043B0070F25E /* AttributeConfig.m */; };
+		B24B73E11C90043B0070F25E /* CAParagraphLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73C71C90043B0070F25E /* CAParagraphLayer.m */; };
+		B24B73E21C90043B0070F25E /* ContentViewTiledLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73C91C90043B0070F25E /* ContentViewTiledLayer.m */; };
+		B24B73E31C90043B0070F25E /* FastTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73CB1C90043B0070F25E /* FastTextStorage.m */; };
+		B24B73E41C90043B0070F25E /* FastTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73CD1C90043B0070F25E /* FastTextView.m */; };
+		B24B73E51C90043B0070F25E /* FileWrapperObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73CF1C90043B0070F25E /* FileWrapperObject.m */; };
+		B24B73E61C90043B0070F25E /* NSAttributedString+TextUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73D11C90043B0070F25E /* NSAttributedString+TextUtil.m */; };
+		B24B73E71C90043B0070F25E /* NSCharacterSet+EmojiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73D31C90043B0070F25E /* NSCharacterSet+EmojiAdditions.m */; };
+		B24B73E81C90043B0070F25E /* NSMutableAttributedString+TextUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73D51C90043B0070F25E /* NSMutableAttributedString+TextUtil.m */; };
+		B24B73E91C90043B0070F25E /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73D71C90043B0070F25E /* TestViewController.m */; };
+		B24B73EA1C90043B0070F25E /* TextAttchment.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73D91C90043B0070F25E /* TextAttchment.m */; };
+		B24B73EB1C90043B0070F25E /* TextParagraph.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73DB1C90043B0070F25E /* TextParagraph.m */; };
+		B24B73EC1C90043B0070F25E /* UIColor+TextUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73DD1C90043B0070F25E /* UIColor+TextUtil.m */; };
+		B24B73ED1C90043B0070F25E /* UIFont+TextUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73DF1C90043B0070F25E /* UIFont+TextUtil.m */; };
+		B24B73F01C9004A60070F25E /* TextConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73EE1C9004A60070F25E /* TextConfig.m */; };
+		B24B73F31C9005830070F25E /* UIImage-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73F21C9005830070F25E /* UIImage-Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B24B73F81C901B390070F25E /* SlideAttachmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73F71C901B390070F25E /* SlideAttachmentCell.m */; };
 		B2503C361C7C440100AFC297 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2503C351C7C440100AFC297 /* main.m */; };
 		B2503C391C7C440100AFC297 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2503C381C7C440100AFC297 /* AppDelegate.m */; };
 		B2503C411C7C440100AFC297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2503C401C7C440100AFC297 /* Assets.xcassets */; };
@@ -70,6 +88,42 @@
 /* Begin PBXFileReference section */
 		0A82345529B1E6B09110E2DD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9C1D351131C430CBB4579E0C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B24B73C01C9003E00070F25E /* ActionDescrptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionDescrptionViewController.h; sourceTree = "<group>"; };
+		B24B73C11C9003E00070F25E /* ActionDescrptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionDescrptionViewController.m; sourceTree = "<group>"; };
+		B24B73C41C90043B0070F25E /* AttributeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeConfig.h; sourceTree = "<group>"; };
+		B24B73C51C90043B0070F25E /* AttributeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeConfig.m; sourceTree = "<group>"; };
+		B24B73C61C90043B0070F25E /* CAParagraphLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAParagraphLayer.h; sourceTree = "<group>"; };
+		B24B73C71C90043B0070F25E /* CAParagraphLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAParagraphLayer.m; sourceTree = "<group>"; };
+		B24B73C81C90043B0070F25E /* ContentViewTiledLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewTiledLayer.h; sourceTree = "<group>"; };
+		B24B73C91C90043B0070F25E /* ContentViewTiledLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewTiledLayer.m; sourceTree = "<group>"; };
+		B24B73CA1C90043B0070F25E /* FastTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastTextStorage.h; sourceTree = "<group>"; };
+		B24B73CB1C90043B0070F25E /* FastTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastTextStorage.m; sourceTree = "<group>"; };
+		B24B73CC1C90043B0070F25E /* FastTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastTextView.h; sourceTree = "<group>"; };
+		B24B73CD1C90043B0070F25E /* FastTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastTextView.m; sourceTree = "<group>"; };
+		B24B73CE1C90043B0070F25E /* FileWrapperObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWrapperObject.h; sourceTree = "<group>"; };
+		B24B73CF1C90043B0070F25E /* FileWrapperObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileWrapperObject.m; sourceTree = "<group>"; };
+		B24B73D01C90043B0070F25E /* NSAttributedString+TextUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+TextUtil.h"; sourceTree = "<group>"; };
+		B24B73D11C90043B0070F25E /* NSAttributedString+TextUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+TextUtil.m"; sourceTree = "<group>"; };
+		B24B73D21C90043B0070F25E /* NSCharacterSet+EmojiAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet+EmojiAdditions.h"; sourceTree = "<group>"; };
+		B24B73D31C90043B0070F25E /* NSCharacterSet+EmojiAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCharacterSet+EmojiAdditions.m"; sourceTree = "<group>"; };
+		B24B73D41C90043B0070F25E /* NSMutableAttributedString+TextUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+TextUtil.h"; sourceTree = "<group>"; };
+		B24B73D51C90043B0070F25E /* NSMutableAttributedString+TextUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+TextUtil.m"; sourceTree = "<group>"; };
+		B24B73D61C90043B0070F25E /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		B24B73D71C90043B0070F25E /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		B24B73D81C90043B0070F25E /* TextAttchment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextAttchment.h; sourceTree = "<group>"; };
+		B24B73D91C90043B0070F25E /* TextAttchment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextAttchment.m; sourceTree = "<group>"; };
+		B24B73DA1C90043B0070F25E /* TextParagraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextParagraph.h; sourceTree = "<group>"; };
+		B24B73DB1C90043B0070F25E /* TextParagraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextParagraph.m; sourceTree = "<group>"; };
+		B24B73DC1C90043B0070F25E /* UIColor+TextUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TextUtil.h"; sourceTree = "<group>"; };
+		B24B73DD1C90043B0070F25E /* UIColor+TextUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TextUtil.m"; sourceTree = "<group>"; };
+		B24B73DE1C90043B0070F25E /* UIFont+TextUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+TextUtil.h"; sourceTree = "<group>"; };
+		B24B73DF1C90043B0070F25E /* UIFont+TextUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+TextUtil.m"; sourceTree = "<group>"; };
+		B24B73EE1C9004A60070F25E /* TextConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextConfig.m; sourceTree = "<group>"; };
+		B24B73EF1C9004A60070F25E /* TextConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextConfig.h; sourceTree = "<group>"; };
+		B24B73F11C9005830070F25E /* UIImage-Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Extensions.h"; sourceTree = "<group>"; };
+		B24B73F21C9005830070F25E /* UIImage-Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-Extensions.m"; sourceTree = "<group>"; };
+		B24B73F61C901B390070F25E /* SlideAttachmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideAttachmentCell.h; sourceTree = "<group>"; };
+		B24B73F71C901B390070F25E /* SlideAttachmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideAttachmentCell.m; sourceTree = "<group>"; };
 		B2503C311C7C440100AFC297 /* Demo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2503C351C7C440100AFC297 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2503C371C7C440100AFC297 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -210,6 +264,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B24B73C31C90043B0070F25E /* FastTextView */ = {
+			isa = PBXGroup;
+			children = (
+				B24B73F61C901B390070F25E /* SlideAttachmentCell.h */,
+				B24B73F71C901B390070F25E /* SlideAttachmentCell.m */,
+				B24B73EE1C9004A60070F25E /* TextConfig.m */,
+				B24B73EF1C9004A60070F25E /* TextConfig.h */,
+				B24B73F11C9005830070F25E /* UIImage-Extensions.h */,
+				B24B73F21C9005830070F25E /* UIImage-Extensions.m */,
+				B24B73C41C90043B0070F25E /* AttributeConfig.h */,
+				B24B73C51C90043B0070F25E /* AttributeConfig.m */,
+				B24B73C61C90043B0070F25E /* CAParagraphLayer.h */,
+				B24B73C71C90043B0070F25E /* CAParagraphLayer.m */,
+				B24B73C81C90043B0070F25E /* ContentViewTiledLayer.h */,
+				B24B73C91C90043B0070F25E /* ContentViewTiledLayer.m */,
+				B24B73CA1C90043B0070F25E /* FastTextStorage.h */,
+				B24B73CB1C90043B0070F25E /* FastTextStorage.m */,
+				B24B73CC1C90043B0070F25E /* FastTextView.h */,
+				B24B73CD1C90043B0070F25E /* FastTextView.m */,
+				B24B73CE1C90043B0070F25E /* FileWrapperObject.h */,
+				B24B73CF1C90043B0070F25E /* FileWrapperObject.m */,
+				B24B73D01C90043B0070F25E /* NSAttributedString+TextUtil.h */,
+				B24B73D11C90043B0070F25E /* NSAttributedString+TextUtil.m */,
+				B24B73D21C90043B0070F25E /* NSCharacterSet+EmojiAdditions.h */,
+				B24B73D31C90043B0070F25E /* NSCharacterSet+EmojiAdditions.m */,
+				B24B73D41C90043B0070F25E /* NSMutableAttributedString+TextUtil.h */,
+				B24B73D51C90043B0070F25E /* NSMutableAttributedString+TextUtil.m */,
+				B24B73D61C90043B0070F25E /* TestViewController.h */,
+				B24B73D71C90043B0070F25E /* TestViewController.m */,
+				B24B73D81C90043B0070F25E /* TextAttchment.h */,
+				B24B73D91C90043B0070F25E /* TextAttchment.m */,
+				B24B73DA1C90043B0070F25E /* TextParagraph.h */,
+				B24B73DB1C90043B0070F25E /* TextParagraph.m */,
+				B24B73DC1C90043B0070F25E /* UIColor+TextUtil.h */,
+				B24B73DD1C90043B0070F25E /* UIColor+TextUtil.m */,
+				B24B73DE1C90043B0070F25E /* UIFont+TextUtil.h */,
+				B24B73DF1C90043B0070F25E /* UIFont+TextUtil.m */,
+			);
+			path = FastTextView;
+			sourceTree = "<group>";
+		};
 		B2503C281C7C440100AFC297 = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +343,7 @@
 				B2503C451C7C440100AFC297 /* Info.plist */,
 				B2503C351C7C440100AFC297 /* main.m */,
 				B2503D9A1C7D447D00AFC297 /* ReadMe */,
+				B24B73C31C90043B0070F25E /* FastTextView */,
 				B27B9BDD1C86E66200EF0BE8 /* AudioStreamer */,
 				B27B9BCA1C85513100EF0BE8 /* JMRoundedCorner */,
 				B2503D541C7C614400AFC297 /* BaseRequestSDK */,
@@ -474,6 +570,8 @@
 				B25BC8D81C7FFB5D007E8122 /* SecondViewController.m */,
 				B27B9BC41C85479300EF0BE8 /* ListViewController.h */,
 				B27B9BC51C85479300EF0BE8 /* ListViewController.m */,
+				B24B73C01C9003E00070F25E /* ActionDescrptionViewController.h */,
+				B24B73C11C9003E00070F25E /* ActionDescrptionViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -632,16 +730,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				B25BC8D91C7FFB5D007E8122 /* SecondViewController.m in Sources */,
+				B24B73EA1C90043B0070F25E /* TextAttchment.m in Sources */,
 				B2503D0F1C7C4BCE00AFC297 /* GiFHUD.m in Sources */,
+				B24B73E31C90043B0070F25E /* FastTextStorage.m in Sources */,
+				B24B73E01C90043B0070F25E /* AttributeConfig.m in Sources */,
 				B2503D0E1C7C4BCE00AFC297 /* EmptyView.m in Sources */,
+				B24B73ED1C90043B0070F25E /* UIFont+TextUtil.m in Sources */,
 				B2503CC51C7C466000AFC297 /* LoginViewController.m in Sources */,
 				B2503D151C7C4BCE00AFC297 /* NSDictionary+jsonString.m in Sources */,
 				B2503CA31C7C466000AFC297 /* BaseCell.m in Sources */,
 				B2503D081C7C4BCE00AFC297 /* CaloriesCalculate.mm in Sources */,
 				B2E0AB861C7DC145000DBA5E /* CYLTabBarControllerConfig.m in Sources */,
 				B2503CA71C7C466000AFC297 /* BaseViewController.m in Sources */,
+				B24B73E11C90043B0070F25E /* CAParagraphLayer.m in Sources */,
 				B2503D171C7C4BCE00AFC297 /* NSTimer+IOSUtils.m in Sources */,
+				B24B73EB1C90043B0070F25E /* TextParagraph.m in Sources */,
 				B2503C391C7C440100AFC297 /* AppDelegate.m in Sources */,
+				B24B73E61C90043B0070F25E /* NSAttributedString+TextUtil.m in Sources */,
 				B27B9BD01C85513100EF0BE8 /* UIView+RoundedCorner.m in Sources */,
 				B2503D121C7C4BCE00AFC297 /* NSArray+jsonString.m in Sources */,
 				B25BC8D61C7FFB54007E8122 /* FirstViewController.m in Sources */,
@@ -650,36 +755,47 @@
 				B2503D1C1C7C4BCE00AFC297 /* Singleton.m in Sources */,
 				B2503D201C7C4BCE00AFC297 /* UIImageView+LBBlurredImage.m in Sources */,
 				B25BC8D31C7FFB49007E8122 /* HomeViewController.m in Sources */,
+				B24B73E51C90043B0070F25E /* FileWrapperObject.m in Sources */,
 				B2503C361C7C440100AFC297 /* main.m in Sources */,
 				B2503D901C7C614400AFC297 /* UserInfoRequestManager.m in Sources */,
+				B24B73E21C90043B0070F25E /* ContentViewTiledLayer.m in Sources */,
 				B2503D101C7C4BCE00AFC297 /* MCSegmentedControl.m in Sources */,
 				B2503D131C7C4BCE00AFC297 /* NSData+DictOrArray.m in Sources */,
 				B2503D8A1C7C614400AFC297 /* RequestBaseManager.m in Sources */,
 				B2503D091C7C4BCE00AFC297 /* CLLocation+Sino.m in Sources */,
 				B2503D191C7C4BCE00AFC297 /* ProgressHUD.m in Sources */,
 				B2503D0D1C7C4BCE00AFC297 /* DrawTool.mm in Sources */,
+				B24B73F01C9004A60070F25E /* TextConfig.m in Sources */,
 				B2503D1A1C7C4BCE00AFC297 /* PublicInterface.m in Sources */,
 				B2503D071C7C4BCE00AFC297 /* BKTextView.m in Sources */,
+				B24B73E91C90043B0070F25E /* TestViewController.m in Sources */,
 				B2503D8D1C7C614400AFC297 /* SpeedXLocationManager.m in Sources */,
 				B2503D1E1C7C4BCE00AFC297 /* UIColor+IOSUtils.m in Sources */,
 				B27B9BE01C86E66200EF0BE8 /* AudioStreamer.m in Sources */,
 				B25BC8CC1C7FFB04007E8122 /* HomeCell.m in Sources */,
+				B24B73F31C9005830070F25E /* UIImage-Extensions.m in Sources */,
 				B2503D1F1C7C4BCE00AFC297 /* UIImage+IOSUtils.m in Sources */,
 				B2503D141C7C4BCE00AFC297 /* NSDate+IOSUtils.m in Sources */,
 				B27B9BC61C85479300EF0BE8 /* ListViewController.m in Sources */,
 				B2503D9E1C7D46F800AFC297 /* RegisterViewController.m in Sources */,
 				B2503CA61C7C466000AFC297 /* BaseModel.m in Sources */,
+				B24B73F81C901B390070F25E /* SlideAttachmentCell.m in Sources */,
+				B24B73E71C90043B0070F25E /* NSCharacterSet+EmojiAdditions.m in Sources */,
 				B2503D111C7C4BCE00AFC297 /* NetworkManager.m in Sources */,
 				B2503D0C1C7C4BCE00AFC297 /* DJTextField.m in Sources */,
+				B24B73E81C90043B0070F25E /* NSMutableAttributedString+TextUtil.m in Sources */,
 				B2503CC41C7C466000AFC297 /* LoginModel.m in Sources */,
 				B2503D211C7C4BCE00AFC297 /* UIView+Utils.m in Sources */,
 				B27B9BCF1C85513100EF0BE8 /* UIImage+RoundedCorner.m in Sources */,
+				B24B73E41C90043B0070F25E /* FastTextView.m in Sources */,
 				B2E0AB891C7DC323000DBA5E /* CYLPlusButtonSubclass.m in Sources */,
+				B24B73EC1C90043B0070F25E /* UIColor+TextUtil.m in Sources */,
 				B2503D0B1C7C4BCE00AFC297 /* DJLabel.m in Sources */,
 				B2503D161C7C4BCE00AFC297 /* NSString+IOSUtils.m in Sources */,
 				B2503D1D1C7C4BCE00AFC297 /* Tooles.m in Sources */,
 				B2503D0A1C7C4BCE00AFC297 /* DeviceUtility.m in Sources */,
 				B2503CC31C7C466000AFC297 /* LoginCell.m in Sources */,
+				B24B73C21C9003E00070F25E /* ActionDescrptionViewController.m in Sources */,
 				B25BC8CD1C7FFB04007E8122 /* HomeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
