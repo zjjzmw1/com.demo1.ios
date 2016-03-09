@@ -11,6 +11,7 @@
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
 #import "HomeViewController.h"
+#import "ActionDescrptionViewController.h"
 
 #import "UINavigationController+FDFullscreenPopGesture.h"       // 导航栏
 #import <CYLTabBarController/CYLTabBarController.h>             // tabbar
@@ -37,11 +38,13 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
     // 登录页面的测试
-    [self homeVC];
+//    [self homeVC];
     // tabbar测试--规则的
 //    [self setupViewControllers];
     // tabar测试--不规则的
 //    [self initTabBarNotNomal];
+    // 图文混排测试
+    [self fastTextViewVC];
 
 
     return YES;
@@ -56,6 +59,12 @@
 #pragma mark - 首页
 -(void)homeVC {
     HomeViewController *loginVC = [[HomeViewController alloc]init];
+    UINavigationController *loginNavi = [[UINavigationController alloc]initWithRootViewController:loginVC];
+    self.window.rootViewController = loginNavi;
+}
+#pragma mark - 图文混排
+-(void)fastTextViewVC {
+    ActionDescrptionViewController *loginVC = [[ActionDescrptionViewController alloc]init];
     UINavigationController *loginNavi = [[UINavigationController alloc]initWithRootViewController:loginVC];
     self.window.rootViewController = loginNavi;
 }
