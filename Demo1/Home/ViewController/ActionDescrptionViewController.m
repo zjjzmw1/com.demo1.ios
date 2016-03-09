@@ -21,6 +21,7 @@
 
 #define TOP_VIEW_HEIGHT 35
 #define kSpacing 20
+#define kColorViewWidth 180
 
 #define ARRSIZE(a)      (sizeof(a) / sizeof(a[0]))
 
@@ -38,7 +39,8 @@
     UIButton *bigButton;
     UIButton *colorButton;
     UIButton *downButton;
-    
+    /// 颜色的view
+    UIView *colorView;
 }
 
 @end
@@ -65,9 +67,11 @@
         view.attributeConfig=[TextConfig editorAttributeConfig:fontSize isBold:isBold color:fontColor];
         view.delegate = (id<FastTextViewDelegate>)self;
         view.placeHolder=@"编辑活动说明，您最多可以添加3张图片";
+        view.placeHolderColor = [UIColor lightGrayColor];
         view.pragraghSpaceHeight=15;
         [self.view addSubview:view];
         self.fastTextView = view;
+      
     }
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
@@ -145,24 +149,8 @@
         colorButton.tag = 13;
         [[colorButton rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
             NSLog(@"colorButton===%ld",(long)colorButton.tag);
-            if (_fastTextView.selectedRange.length>0) {
-                CTFontRef font = CTFontCreateWithName((CFStringRef)[UIFont systemFontOfSize:17].fontName, 17, NULL);
-                [_fastTextView.attributedString beginStorageEditing];
-                [_fastTextView.attributedString addAttribute:(id)kCTFontAttributeName value:(__bridge id)font range:_fastTextView.selectedRange];
-                
-                //下划线
-                [_fastTextView.attributedString addAttribute:(id)kCTUnderlineStyleAttributeName value:(id)[NSNumber numberWithInt:kCTUnderlineStyleThick] range:_fastTextView.selectedRange];
-                //下划线颜色
-                [_fastTextView.attributedString addAttribute:(id)kCTUnderlineColorAttributeName value:(id)[UIColor redColor].CGColor range:_fastTextView.selectedRange];
-                
-                [_fastTextView.attributedString refreshParagraghInRange:_fastTextView.selectedRange];
-                [_fastTextView.attributedString endStorageEditing];
-                [_fastTextView refreshAllView];
-            }
-            
-            fontColor = [UIColor redColor];
-            
-            wSelf.fastTextView.attributeConfig=[TextConfig editorAttributeConfig:fontSize isBold:isBold color:fontColor];
+            colorView.frame = CGRectMake(SCREEN_WIDTH - kColorViewWidth - 30, self.topview.top - 40, kColorViewWidth, 35);
+            colorView.hidden = NO;
         }];
         [self.topview addSubview:colorButton];
         // 完成
@@ -175,6 +163,108 @@
             [wSelf dismissKeyBoard:nil];
         }];
         [self.topview addSubview:downButton];
+        
+        colorView = [[UIView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH - kColorViewWidth - 50, self.topview.top - 40, kColorViewWidth, 35)];
+        colorView.backgroundColor = [UIColor grayColor];
+        [self.view addSubview:colorView];
+        colorView.hidden = YES;
+        for (int i = 0; i < 6; i++) {
+            UIButton *colorBtn = [Tooles getButton:CGRectMake(10 + i*26, 6.5, 22, 22) title:nil titleColor:[UIColor clearColor] titleSize:12];
+            colorBtn.layer.cornerRadius = 11;
+            colorBtn.layer.masksToBounds = YES;
+            switch (i) {
+                case 0:
+                {
+                    colorBtn.backgroundColor = [UIColor redColor];
+                }
+                    break;
+                case 1:
+                {
+                    colorBtn.backgroundColor = [UIColor greenColor];
+                }
+                    break;
+                case 2:
+                {
+                    colorBtn.backgroundColor = [UIColor blueColor];
+                }
+                    break;
+                case 3:
+                {
+                    colorBtn.backgroundColor = [UIColor redColor];
+                }
+                    break;
+                case 4:
+                {
+                    colorBtn.backgroundColor = [UIColor whiteColor];
+                }
+                    break;
+                case 5:
+                {
+                    colorBtn.backgroundColor = [UIColor blackColor];
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+            colorBtn.tag = 100 + i;
+            [colorView addSubview:colorBtn];
+            [[colorBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
+                colorView.hidden = YES;
+                
+                switch (colorBtn.tag - 100) {
+                    case 0:
+                    {
+                        colorBtn.backgroundColor = [UIColor redColor];
+                    }
+                        break;
+                    case 1:
+                    {
+                        colorBtn.backgroundColor = [UIColor greenColor];
+                    }
+                        break;
+                    case 2:
+                    {
+                        colorBtn.backgroundColor = [UIColor blueColor];
+                    }
+                        break;
+                    case 3:
+                    {
+                        colorBtn.backgroundColor = [UIColor redColor];
+                    }
+                        break;
+                    case 4:
+                    {
+                        colorBtn.backgroundColor = [UIColor whiteColor];
+                    }
+                        break;
+                    case 5:
+                    {
+                        colorBtn.backgroundColor = [UIColor blackColor];
+                    }
+                        break;
+                        
+                    default:
+                        break;
+                }
+                fontColor = colorBtn.backgroundColor;
+                if (_fastTextView.selectedRange.length>0) {
+                    CTFontRef font = CTFontCreateWithName((CFStringRef)[UIFont systemFontOfSize:17].fontName, 17, NULL);
+                    [_fastTextView.attributedString beginStorageEditing];
+                    [_fastTextView.attributedString addAttribute:(id)kCTFontAttributeName value:(__bridge id)font range:_fastTextView.selectedRange];
+                    
+                    //下划线
+                    [_fastTextView.attributedString addAttribute:(id)kCTUnderlineStyleAttributeName value:(id)[NSNumber numberWithInt:kCTUnderlineStyleThick] range:_fastTextView.selectedRange];
+                    //下划线颜色
+                    [_fastTextView.attributedString addAttribute:(id)kCTUnderlineColorAttributeName value:(id)[UIColor redColor].CGColor range:_fastTextView.selectedRange];
+                    
+                    [_fastTextView.attributedString refreshParagraghInRange:_fastTextView.selectedRange];
+                    [_fastTextView.attributedString endStorageEditing];
+                    [_fastTextView refreshAllView];
+                }
+                wSelf.fastTextView.attributeConfig=[TextConfig editorAttributeConfig:fontSize isBold:isBold color:fontColor];
+            }];
+        }
     }
 }
 

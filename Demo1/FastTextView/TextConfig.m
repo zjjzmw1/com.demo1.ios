@@ -118,10 +118,10 @@ static AttributeConfig *readerTitleAttributeConfig = nil;
                            (id)[NSNumber numberWithFloat: strokeWidth], (NSString *)kCTStrokeWidthAttributeName,
                            (__bridge id) paragraphStyle, (NSString *) kCTParagraphStyleAttributeName,
                            nil];
-    if (isBold) {
-        [attrs setValue:(id)[NSNumber numberWithInt:kCTUnderlineStyleThick] forKey:(id)kCTUnderlineStyleAttributeName];
-        [attrs setValue:(id)[UIColor blackColor].CGColor forKey:(id)kCTUnderlineColorAttributeName];
-    }
+//    if (isBold) {//下划线的暂时不需要
+//        [attrs setValue:(id)[NSNumber numberWithInt:kCTUnderlineStyleThick] forKey:(id)kCTUnderlineStyleAttributeName];
+//        [attrs setValue:(id)[UIColor blackColor].CGColor forKey:(id)kCTUnderlineColorAttributeName];
+//    }
     
     CFRelease(fontRef);
     return attrs;

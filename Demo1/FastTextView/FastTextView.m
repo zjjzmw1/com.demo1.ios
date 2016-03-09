@@ -1429,7 +1429,11 @@ static CFIndex bsearchLines(CFArrayRef lines, CFIndex l, CFIndex h, CFIndex quer
     }
     
     CGRect careRect = [self caretRectForIndex:index point:point];
-    
+    // 这里控制光标的位置。todo-zhangmingwei
+    NSLog(@"last===============%f,%f,%f,%f",careRect.origin.x,careRect.origin.y,careRect.size.width,careRect.size.height);
+    if (careRect.size.height == 0) {// 不隐藏光标
+        careRect = CGRectMake(careRect.origin.x, careRect.origin.y, careRect.size.width, 28.0f);
+    }
     _caretView.frame = careRect;
     //NSLog(@"_caretView.frame %@",NSStringFromCGRect(_caretView.frame));
     [_caretView delayBlink];
@@ -1485,6 +1489,7 @@ static CFIndex bsearchLines(CFArrayRef lines, CFIndex l, CFIndex h, CFIndex quer
         
         careRect=CGRectApplyAffineTransform (careRect,CGAffineTransformMake(1.0, 0.0, 0.0, -1.0,0.0,_textContentView.frame.size.height));
         
+        NSLog(@"x1====%f,%f",careRect.origin.x,careRect.size.width);
         return careRect;
         
     } else if (_attributedString.length == 0 || index == 0) {        
@@ -1494,6 +1499,7 @@ static CFIndex bsearchLines(CFArrayRef lines, CFIndex l, CFIndex h, CFIndex quer
         CGRect careRect=CGRectMake(origin.x, origin.y, 3, self.font.ascender + fabs(self.font.descender*2));
         
         careRect=CGRectApplyAffineTransform (careRect,CGAffineTransformMake(1.0, 0.0, 0.0, -1.0,0.0,_textContentView.frame.size.height));
+        NSLog(@"x2====%f,%f",careRect.origin.x,careRect.size.width);
         return careRect;
     }
     
@@ -1576,7 +1582,6 @@ static CFIndex bsearchLines(CFArrayRef lines, CFIndex l, CFIndex h, CFIndex quer
                 } else if ((([_attributedString.string characterAtIndex:index-1] == '\n')||([_attributedString.string characterAtIndex:index-1] == '\r')) && range.length == 1) {
                     xPos = 0.0f; // empty line                    
                 }
-                
                 caretLineIndex=i;
                 caretLineWidth=origin.x+ lineWidth;
                 if (self.selectedRange.length!=0) {
@@ -1602,6 +1607,7 @@ static CFIndex bsearchLines(CFArrayRef lines, CFIndex l, CFIndex h, CFIndex quer
                     
                         careRect=CGRectApplyAffineTransform (careRect,CGAffineTransformMake(1.0, 0.0, 0.0, -1.0,0.0,_textContentView.frame.size.height));
                         //wq ADD for 坐标变换 -END
+
                         return careRect;
 //                    }
                 }
@@ -1609,7 +1615,10 @@ static CFIndex bsearchLines(CFArrayRef lines, CFIndex l, CFIndex h, CFIndex quer
         }        
     }   
     
+
     returnRect=CGRectApplyAffineTransform (returnRect,CGAffineTransformMake(1.0, 0.0, 0.0, -1.0,0.0,_textContentView.frame.size.height));
+    
+    NSLog(@"x3====%f,%f",returnRect.origin.x,returnRect.size.width);
     return returnRect;
 }
 
