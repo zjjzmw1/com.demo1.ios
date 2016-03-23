@@ -19,6 +19,9 @@
 #import "UIImage-Extensions.h"
 #import "SlideAttachmentCell.h"
 
+#import "TextParagraph.h"
+#import "NSString+IOSUtils.h"
+
 #define TOP_VIEW_HEIGHT 35
 #define kSpacing 20
 #define kColorViewWidth 180
@@ -448,5 +451,114 @@
     [_fastTextView resignFirstResponder];
 }
 
+//- (NSString *)htmlStringWithAttachmentPath:(NSString *)attachpath ChapterAuthor:(NSString *)chapterAuthor
+//{
+//    NSString *storeString = @""; //[NSString stringWithCapacity:[self length]];
+//    
+//    NSAttributedString *newAttrStr=[self copy];
+//    NSMutableDictionary *textParagraphMap=[[NSMutableDictionary alloc]init];
+//    
+//    TextParagraph *textParagraph;
+//    //NSDictionary *longeffectiveAttributes;
+//    NSRange longRange;
+//    unsigned int longPos = 0;
+//    while ((longPos < [newAttrStr length]) &&
+//           (textParagraph = [newAttrStr attribute:FastTextParagraphAttributeName atIndex:longPos longestEffectiveRange:&longRange inRange:NSMakeRange(0, [newAttrStr length])])){
+//        
+//        NSLog(@"textParagraph %@",textParagraph);
+//        [textParagraphMap setValue:NSStringFromRange(longRange) forKey:textParagraph.key];
+//        
+//        longPos = longRange.location + longRange.length;
+//    }
+//    
+//    NSDictionary *effectiveAttributes;
+//    NSRange range;
+//    unsigned int pos = 0;
+//    while ((pos < [newAttrStr length]) &&
+//           (effectiveAttributes = [newAttrStr attributesAtIndex:pos effectiveRange:&range])) {
+//        
+//        NSString *plainString=[[newAttrStr attributedSubstringFromRange:range] string];
+//        
+//        //一下三个替换步骤不可错误！
+//        //替换img的魔术占位符
+//        unichar attachmentCharacter = FastTextAttachmentCharacter;
+//        plainString=[plainString stringByReplacingOccurrencesOfString:[NSString stringWithCharacters:&attachmentCharacter length:1] withString:@""];
+//        //编码html标签
+//        plainString = [plainString stringByAddingHTMLEntities];
+//        //替换\n为<br/>标签
+//        plainString=[plainString stringByReplacingOccurrencesOfString:@"\n" withString:@"<br/>"];
+//        
+//        
+//        NSRange paragraphRange = NSMakeRange(NSNotFound, NSNotFound) ;
+//        TextParagraph *textParagraph=[effectiveAttributes objectForKey:FastTextParagraphAttributeName];
+//        
+//        if (textParagraph!=nil) {
+//            NSString *rangstr= [textParagraphMap objectForKey:[NSString md5:[textParagraph description]]];
+//            paragraphRange=NSRangeFromString(rangstr);
+//        }
+//        if (paragraphRange.location!=NSNotFound && paragraphRange.location==range.location) {
+//            storeString=[storeString stringByAppendingString:@"<p>"];
+//        }
+//        
+//        //附件处理
+//        id<FastTextAttachmentCell> attachmentcell = [effectiveAttributes objectForKey:FastTextAttachmentAttributeName];
+//        NSInteger ifile=1;
+//        if (attachmentcell && [attachmentcell isKindOfClass:[SlideAttachmentCell class]])
+//        {
+//            SlideAttachmentCell *slideCell=(SlideAttachmentCell *)attachmentcell;
+//            FileWrapperObject  *fileWrapper =slideCell.fileWrapperObject;
+//            if (fileWrapper!=nil) {
+//                NSString *filepath=fileWrapper.filePath;
+//                UIImage *attimg= [UIImage imageWithContentsOfFile:filepath];
+//                NSString *newPath=[attachpath stringByAppendingPathComponent:fileWrapper.fileName];
+//                NSError *error;
+//                [[NSFileManager defaultManager] copyItemAtPath:filepath toPath:newPath error:&error];
+//                
+//                ifile++;
+//                
+//                
+//                if ([attachmentcell isKindOfClass:[SlideAttachmentCell class]]){
+//                    SlideAttachmentCell *cell=(SlideAttachmentCell*) attachmentcell;
+//                    NSInteger thumbImageWidth=cell.thumbImageWidth;
+//                    NSInteger thumbImageHeight=cell.thumbImageHeight;
+//                    /* WQ add this for UIWebView editor 一键排版
+//                     NSInteger thumbImageWidth=DEFAULT_thumbImageWidth;
+//                     NSInteger thumbImageHeight=DEFAULT_thumbImageHeight;
+//                     if (attimg!=nil) {
+//                     CGSize size=[attimg sizeByScalingProportionallyToSize:CGSizeMake(thumbImageWidth, thumbImageHeight)];
+//                     thumbImageWidth=size.width;
+//                     thumbImageHeight=size.height;
+//                     }
+//                     */
+//                    
+//                    storeString=[storeString stringByAppendingFormat:@"<img src=\"%@\" height=\"%ld\" width=\"%ld\"" ,fileWrapper.fileName,(long)thumbImageHeight,(long)thumbImageWidth];
+//                    if (![NSString isEmptyString:cell.txtdesc]) {
+//                        
+//                        storeString=[storeString stringByAppendingFormat:@" title=\"%@\" ",cell.txtdesc];
+//                    }
+//                    
+//                    storeString=[storeString stringByAppendingString:@"/>"];
+//                }
+//            }
+//            
+//        }else{
+//            //文本
+//            storeString=[storeString stringByAppendingFormat:@"%@", plainString];
+//        }
+//        if (paragraphRange.length!=NSNotFound
+//            && (paragraphRange.location+paragraphRange.length)==(range.location+range.length)) {
+//            storeString=[storeString stringByAppendingString:@"</p>"];
+//        }
+//        
+//        pos = range.location + range.length;
+//    }
+//    //[storeString appendString:[self closeTags]];
+////    NSString *chaptertitle=chapterAuthor.title;
+////    if ([NSString isEmptyString:chaptertitle]) {
+////        chaptertitle=@"";
+////    }
+//    storeString=[NSString stringWithFormat:@"<html><head><meta name=\"chapter:timestamp\" content=\"%d\" /><title>%@</title></head><body>%@</body></html>",0,@"",storeString];
+//    return storeString;
+//}
 
 @end
