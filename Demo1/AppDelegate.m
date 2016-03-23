@@ -12,6 +12,7 @@
 #import "RegisterViewController.h"
 #import "HomeViewController.h"
 #import "ActionDescrptionViewController.h"
+#import "ImageSelectViewController.h"
 
 #import "UINavigationController+FDFullscreenPopGesture.h"       // 导航栏
 #import <CYLTabBarController/CYLTabBarController.h>             // tabbar
@@ -44,8 +45,9 @@
     // tabar测试--不规则的
 //    [self initTabBarNotNomal];
     // 图文混排测试
-    [self fastTextViewVC];
-
+//    [self fastTextViewVC];
+    // 相册选取
+    [self imageSelectVC];
 
     return YES;
 }
@@ -65,6 +67,12 @@
 #pragma mark - 图文混排
 -(void)fastTextViewVC {
     ActionDescrptionViewController *loginVC = [[ActionDescrptionViewController alloc]init];
+    UINavigationController *loginNavi = [[UINavigationController alloc]initWithRootViewController:loginVC];
+    self.window.rootViewController = loginNavi;
+}
+#pragma mark - 相册选取测试
+-(void)imageSelectVC {
+    ImageSelectViewController *loginVC = [[ImageSelectViewController alloc]init];
     UINavigationController *loginNavi = [[UINavigationController alloc]initWithRootViewController:loginVC];
     self.window.rootViewController = loginNavi;
 }
