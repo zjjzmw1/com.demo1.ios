@@ -80,5 +80,9 @@
  *  @return <#return value description#>
  */
 - (UIImage *)imageFromSelfView;
+
+
+- (UIView *)getParsentView:(UIView *)view;
+
 @end
 

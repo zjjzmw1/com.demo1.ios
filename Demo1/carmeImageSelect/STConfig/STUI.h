@@ -23,3 +23,8 @@ UIKIT_EXTERN CGFloat const STScaleMax;
 /** 5.图片最小的缩放比例 */
 UIKIT_EXTERN CGFloat const STScaleMin;
 
+/** 6.是否允许横屏*/
+BOOL const STSupportLandscape = YES;
+
+/** 7.是否在横屏的时候充满宽度，，一般是在有长图需求的时候设置为YES(新浪微博的效果)*/
+BOOL const STFullWidthForLandScape = YES;

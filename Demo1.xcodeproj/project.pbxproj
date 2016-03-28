@@ -81,6 +81,11 @@
 		B27B9BE01C86E66200EF0BE8 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = B27B9BDF1C86E66200EF0BE8 /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B27B9BE21C86E80A00EF0BE8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27B9BE11C86E80A00EF0BE8 /* AudioToolbox.framework */; };
 		B27B9BE41C86E81F00EF0BE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27B9BE31C86E81F00EF0BE8 /* CoreGraphics.framework */; };
+		B2823A831CA5496200861676 /* STAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2823A7C1CA5496200861676 /* STAlertView.m */; };
+		B2823A841CA5496200861676 /* STIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2823A7E1CA5496200861676 /* STIndicatorView.m */; };
+		B2823A851CA5496200861676 /* STPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2823A801CA5496200861676 /* STPhotoBrowserController.m */; };
+		B2823A861CA5496200861676 /* STPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2823A821CA5496200861676 /* STPhotoBrowserView.m */; };
+		B2B675321CA8CD9300F23E3A /* ShowBigImageBrowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B675311CA8CD9300F23E3A /* ShowBigImageBrowerViewController.m */; };
 		B2E0AB861C7DC145000DBA5E /* CYLTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0AB851C7DC145000DBA5E /* CYLTabBarControllerConfig.m */; };
 		B2E0AB891C7DC323000DBA5E /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0AB881C7DC323000DBA5E /* CYLPlusButtonSubclass.m */; };
 		B2E636E31CA23AC600E47D66 /* STConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E636D71CA23AC600E47D66 /* STConst.m */; };
@@ -241,6 +246,16 @@
 		B27B9BDF1C86E66200EF0BE8 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
 		B27B9BE11C86E80A00EF0BE8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B27B9BE31C86E81F00EF0BE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B2823A7B1CA5496200861676 /* STAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAlertView.h; sourceTree = "<group>"; };
+		B2823A7C1CA5496200861676 /* STAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAlertView.m; sourceTree = "<group>"; };
+		B2823A7D1CA5496200861676 /* STIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STIndicatorView.h; sourceTree = "<group>"; };
+		B2823A7E1CA5496200861676 /* STIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STIndicatorView.m; sourceTree = "<group>"; };
+		B2823A7F1CA5496200861676 /* STPhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPhotoBrowserController.h; sourceTree = "<group>"; };
+		B2823A801CA5496200861676 /* STPhotoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPhotoBrowserController.m; sourceTree = "<group>"; };
+		B2823A811CA5496200861676 /* STPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPhotoBrowserView.h; sourceTree = "<group>"; };
+		B2823A821CA5496200861676 /* STPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPhotoBrowserView.m; sourceTree = "<group>"; };
+		B2B675301CA8CD9300F23E3A /* ShowBigImageBrowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowBigImageBrowerViewController.h; sourceTree = "<group>"; };
+		B2B675311CA8CD9300F23E3A /* ShowBigImageBrowerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowBigImageBrowerViewController.m; sourceTree = "<group>"; };
 		B2E0AB841C7DC145000DBA5E /* CYLTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarControllerConfig.h; sourceTree = "<group>"; };
 		B2E0AB851C7DC145000DBA5E /* CYLTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarControllerConfig.m; sourceTree = "<group>"; };
 		B2E0AB871C7DC323000DBA5E /* CYLPlusButtonSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButtonSubclass.h; sourceTree = "<group>"; };
@@ -597,6 +612,8 @@
 				B24B73C11C9003E00070F25E /* ActionDescrptionViewController.m */,
 				B2E636E91CA23AEA00E47D66 /* ImageSelectViewController.h */,
 				B2E636EA1CA23AEA00E47D66 /* ImageSelectViewController.m */,
+				B2B675301CA8CD9300F23E3A /* ShowBigImageBrowerViewController.h */,
+				B2B675311CA8CD9300F23E3A /* ShowBigImageBrowerViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -621,9 +638,26 @@
 			path = AudioStreamer;
 			sourceTree = "<group>";
 		};
+		B2823A7A1CA5496200861676 /* STPhotoBrowserView */ = {
+			isa = PBXGroup;
+			children = (
+				B2823A7B1CA5496200861676 /* STAlertView.h */,
+				B2823A7C1CA5496200861676 /* STAlertView.m */,
+				B2823A7D1CA5496200861676 /* STIndicatorView.h */,
+				B2823A7E1CA5496200861676 /* STIndicatorView.m */,
+				B2823A7F1CA5496200861676 /* STPhotoBrowserController.h */,
+				B2823A801CA5496200861676 /* STPhotoBrowserController.m */,
+				B2823A811CA5496200861676 /* STPhotoBrowserView.h */,
+				B2823A821CA5496200861676 /* STPhotoBrowserView.m */,
+			);
+			name = STPhotoBrowserView;
+			path = ../STPhotoBrowserView;
+			sourceTree = "<group>";
+		};
 		B2E636D31CA23AC600E47D66 /* carmeImageSelect */ = {
 			isa = PBXGroup;
 			children = (
+				B2823A7A1CA5496200861676 /* STPhotoBrowserView */,
 				B2E636D41CA23AC600E47D66 /* STConfig */,
 				B2E636DE1CA23AC600E47D66 /* STPhotoKit */,
 			);
@@ -794,6 +828,7 @@
 				B24B73EA1C90043B0070F25E /* TextAttchment.m in Sources */,
 				B2503D0F1C7C4BCE00AFC297 /* GiFHUD.m in Sources */,
 				B24B73E31C90043B0070F25E /* FastTextStorage.m in Sources */,
+				B2823A851CA5496200861676 /* STPhotoBrowserController.m in Sources */,
 				B24B73E01C90043B0070F25E /* AttributeConfig.m in Sources */,
 				B2503D0E1C7C4BCE00AFC297 /* EmptyView.m in Sources */,
 				B24B73ED1C90043B0070F25E /* UIFont+TextUtil.m in Sources */,
@@ -808,6 +843,8 @@
 				B2503D171C7C4BCE00AFC297 /* NSTimer+IOSUtils.m in Sources */,
 				B24B73EB1C90043B0070F25E /* TextParagraph.m in Sources */,
 				B2E636E51CA23AC600E47D66 /* UIImage+ST.m in Sources */,
+				B2823A831CA5496200861676 /* STAlertView.m in Sources */,
+				B2823A861CA5496200861676 /* STPhotoBrowserView.m in Sources */,
 				B2503C391C7C440100AFC297 /* AppDelegate.m in Sources */,
 				B24B73E61C90043B0070F25E /* NSAttributedString+TextUtil.m in Sources */,
 				B27B9BD01C85513100EF0BE8 /* UIView+RoundedCorner.m in Sources */,
@@ -832,7 +869,9 @@
 				B24B73F01C9004A60070F25E /* TextConfig.m in Sources */,
 				B2503D1A1C7C4BCE00AFC297 /* PublicInterface.m in Sources */,
 				B2503D071C7C4BCE00AFC297 /* BKTextView.m in Sources */,
+				B2823A841CA5496200861676 /* STIndicatorView.m in Sources */,
 				B24B73E91C90043B0070F25E /* TestViewController.m in Sources */,
+				B2B675321CA8CD9300F23E3A /* ShowBigImageBrowerViewController.m in Sources */,
 				B2503D8D1C7C614400AFC297 /* SpeedXLocationManager.m in Sources */,
 				B2503D1E1C7C4BCE00AFC297 /* UIColor+IOSUtils.m in Sources */,
 				B27B9BE01C86E66200EF0BE8 /* AudioStreamer.m in Sources */,

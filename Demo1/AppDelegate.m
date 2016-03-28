@@ -13,6 +13,7 @@
 #import "HomeViewController.h"
 #import "ActionDescrptionViewController.h"
 #import "ImageSelectViewController.h"
+#import "ShowBigImageBrowerViewController.h"
 
 #import "UINavigationController+FDFullscreenPopGesture.h"       // 导航栏
 #import <CYLTabBarController/CYLTabBarController.h>             // tabbar
@@ -47,8 +48,10 @@
     // 图文混排测试
 //    [self fastTextViewVC];
     // 相册选取
-    [self imageSelectVC];
+//    [self imageSelectVC];
 
+    // 图片大图浏览
+    [self showBigImageBrower];
     return YES;
 }
 
@@ -73,6 +76,12 @@
 #pragma mark - 相册选取测试
 -(void)imageSelectVC {
     ImageSelectViewController *loginVC = [[ImageSelectViewController alloc]init];
+    UINavigationController *loginNavi = [[UINavigationController alloc]initWithRootViewController:loginVC];
+    self.window.rootViewController = loginNavi;
+}
+#pragma mark - 相册大图浏览
+-(void)showBigImageBrower {
+    ShowBigImageBrowerViewController *loginVC = [[ShowBigImageBrowerViewController alloc]init];
     UINavigationController *loginNavi = [[UINavigationController alloc]initWithRootViewController:loginVC];
     self.window.rootViewController = loginNavi;
 }
