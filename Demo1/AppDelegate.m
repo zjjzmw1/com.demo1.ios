@@ -14,6 +14,7 @@
 #import "ActionDescrptionViewController.h"
 #import "ImageSelectViewController.h"
 #import "ShowBigImageBrowerViewController.h"
+#import "TestVC.h"
 
 #import "UINavigationController+FDFullscreenPopGesture.h"       // 导航栏
 #import <CYLTabBarController/CYLTabBarController.h>             // tabbar
@@ -51,7 +52,9 @@
 //    [self imageSelectVC];
 
     // 图片大图浏览
-    [self showBigImageBrower];
+//    [self showBigImageBrower];
+    // 测试
+    [self testVC];
     return YES;
 }
 
@@ -82,6 +85,12 @@
 #pragma mark - 相册大图浏览
 -(void)showBigImageBrower {
     ShowBigImageBrowerViewController *loginVC = [[ShowBigImageBrowerViewController alloc]init];
+    UINavigationController *loginNavi = [[UINavigationController alloc]initWithRootViewController:loginVC];
+    self.window.rootViewController = loginNavi;
+}
+#pragma mark - 测试的
+-(void)testVC {
+    TestVC *loginVC = [[TestVC alloc]init];
     UINavigationController *loginNavi = [[UINavigationController alloc]initWithRootViewController:loginVC];
     self.window.rootViewController = loginNavi;
 }

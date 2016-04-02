@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		8B0C26A2DD9F0B31DE208CCA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B393EBBE4A820C0DDA501D72 /* libPods.a */; };
+		B20CADA21CAFB4FD00974F05 /* STConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CAD9B1CAFB4FD00974F05 /* STConst.m */; };
+		B20CADA31CAFB4FD00974F05 /* STUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CAD9D1CAFB4FD00974F05 /* STUI.m */; };
+		B20CADA41CAFB4FD00974F05 /* UIImage+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CAD9F1CAFB4FD00974F05 /* UIImage+ST.m */; };
+		B20CADA51CAFB4FD00974F05 /* UIView+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CADA11CAFB4FD00974F05 /* UIView+ST.m */; };
+		B20CADAB1CAFB50600974F05 /* STPhotoKitController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20CADA81CAFB50600974F05 /* STPhotoKitController.mm */; };
+		B20CADAC1CAFB50600974F05 /* UIImagePickerController+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CADAA1CAFB50600974F05 /* UIImagePickerController+ST.m */; };
+		B20CADB61CAFB53A00974F05 /* STAlertView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20CADAF1CAFB53A00974F05 /* STAlertView.mm */; };
+		B20CADB71CAFB53A00974F05 /* STIndicatorView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20CADB11CAFB53A00974F05 /* STIndicatorView.mm */; };
+		B20CADB81CAFB53A00974F05 /* STPhotoBrowserController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20CADB31CAFB53A00974F05 /* STPhotoBrowserController.mm */; };
+		B20CADB91CAFB53A00974F05 /* STPhotoBrowserView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20CADB51CAFB53A00974F05 /* STPhotoBrowserView.mm */; };
+		B20CADBE1CAFB5E000974F05 /* ShowBigImageBrowerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20CADBA1CAFB5E000974F05 /* ShowBigImageBrowerViewController.mm */; };
+		B20CADBF1CAFB5E000974F05 /* ImageSelectViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20CADBC1CAFB5E000974F05 /* ImageSelectViewController.mm */; };
+		B20CADC21CAFB65B00974F05 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CADC11CAFB65B00974F05 /* TestVC.m */; };
 		B24B73C21C9003E00070F25E /* ActionDescrptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73C11C9003E00070F25E /* ActionDescrptionViewController.m */; };
 		B24B73E01C90043B0070F25E /* AttributeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73C51C90043B0070F25E /* AttributeConfig.m */; };
 		B24B73E11C90043B0070F25E /* CAParagraphLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B73C71C90043B0070F25E /* CAParagraphLayer.m */; };
@@ -81,25 +94,40 @@
 		B27B9BE01C86E66200EF0BE8 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = B27B9BDF1C86E66200EF0BE8 /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B27B9BE21C86E80A00EF0BE8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27B9BE11C86E80A00EF0BE8 /* AudioToolbox.framework */; };
 		B27B9BE41C86E81F00EF0BE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27B9BE31C86E81F00EF0BE8 /* CoreGraphics.framework */; };
-		B2823A831CA5496200861676 /* STAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2823A7C1CA5496200861676 /* STAlertView.m */; };
-		B2823A841CA5496200861676 /* STIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2823A7E1CA5496200861676 /* STIndicatorView.m */; };
-		B2823A851CA5496200861676 /* STPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2823A801CA5496200861676 /* STPhotoBrowserController.m */; };
-		B2823A861CA5496200861676 /* STPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2823A821CA5496200861676 /* STPhotoBrowserView.m */; };
-		B2B675321CA8CD9300F23E3A /* ShowBigImageBrowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B675311CA8CD9300F23E3A /* ShowBigImageBrowerViewController.m */; };
 		B2E0AB861C7DC145000DBA5E /* CYLTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0AB851C7DC145000DBA5E /* CYLTabBarControllerConfig.m */; };
 		B2E0AB891C7DC323000DBA5E /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0AB881C7DC323000DBA5E /* CYLPlusButtonSubclass.m */; };
-		B2E636E31CA23AC600E47D66 /* STConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E636D71CA23AC600E47D66 /* STConst.m */; };
-		B2E636E41CA23AC600E47D66 /* STUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E636D91CA23AC600E47D66 /* STUI.m */; };
-		B2E636E51CA23AC600E47D66 /* UIImage+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E636DB1CA23AC600E47D66 /* UIImage+ST.m */; };
-		B2E636E61CA23AC600E47D66 /* UIView+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E636DD1CA23AC600E47D66 /* UIView+ST.m */; };
-		B2E636E71CA23AC600E47D66 /* STPhotoKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E636E01CA23AC600E47D66 /* STPhotoKitController.m */; };
-		B2E636E81CA23AC600E47D66 /* UIImagePickerController+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E636E21CA23AC600E47D66 /* UIImagePickerController+ST.m */; };
-		B2E636EB1CA23AEA00E47D66 /* ImageSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E636EA1CA23AEA00E47D66 /* ImageSelectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A82345529B1E6B09110E2DD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9C1D351131C430CBB4579E0C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B20CAD991CAFB4FD00974F05 /* STConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConfig.h; sourceTree = "<group>"; };
+		B20CAD9A1CAFB4FD00974F05 /* STConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConst.h; sourceTree = "<group>"; };
+		B20CAD9B1CAFB4FD00974F05 /* STConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STConst.m; sourceTree = "<group>"; };
+		B20CAD9C1CAFB4FD00974F05 /* STUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUI.h; sourceTree = "<group>"; };
+		B20CAD9D1CAFB4FD00974F05 /* STUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUI.m; sourceTree = "<group>"; };
+		B20CAD9E1CAFB4FD00974F05 /* UIImage+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ST.h"; sourceTree = "<group>"; };
+		B20CAD9F1CAFB4FD00974F05 /* UIImage+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ST.m"; sourceTree = "<group>"; };
+		B20CADA01CAFB4FD00974F05 /* UIView+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ST.h"; sourceTree = "<group>"; };
+		B20CADA11CAFB4FD00974F05 /* UIView+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ST.m"; sourceTree = "<group>"; };
+		B20CADA71CAFB50600974F05 /* STPhotoKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPhotoKitController.h; sourceTree = "<group>"; };
+		B20CADA81CAFB50600974F05 /* STPhotoKitController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STPhotoKitController.mm; sourceTree = "<group>"; };
+		B20CADA91CAFB50600974F05 /* UIImagePickerController+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+ST.h"; sourceTree = "<group>"; };
+		B20CADAA1CAFB50600974F05 /* UIImagePickerController+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+ST.m"; sourceTree = "<group>"; };
+		B20CADAE1CAFB53A00974F05 /* STAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAlertView.h; sourceTree = "<group>"; };
+		B20CADAF1CAFB53A00974F05 /* STAlertView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STAlertView.mm; sourceTree = "<group>"; };
+		B20CADB01CAFB53A00974F05 /* STIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STIndicatorView.h; sourceTree = "<group>"; };
+		B20CADB11CAFB53A00974F05 /* STIndicatorView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STIndicatorView.mm; sourceTree = "<group>"; };
+		B20CADB21CAFB53A00974F05 /* STPhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPhotoBrowserController.h; sourceTree = "<group>"; };
+		B20CADB31CAFB53A00974F05 /* STPhotoBrowserController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STPhotoBrowserController.mm; sourceTree = "<group>"; };
+		B20CADB41CAFB53A00974F05 /* STPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPhotoBrowserView.h; sourceTree = "<group>"; };
+		B20CADB51CAFB53A00974F05 /* STPhotoBrowserView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STPhotoBrowserView.mm; sourceTree = "<group>"; };
+		B20CADBA1CAFB5E000974F05 /* ShowBigImageBrowerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShowBigImageBrowerViewController.mm; sourceTree = "<group>"; };
+		B20CADBB1CAFB5E000974F05 /* ShowBigImageBrowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowBigImageBrowerViewController.h; sourceTree = "<group>"; };
+		B20CADBC1CAFB5E000974F05 /* ImageSelectViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageSelectViewController.mm; sourceTree = "<group>"; };
+		B20CADBD1CAFB5E000974F05 /* ImageSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSelectViewController.h; sourceTree = "<group>"; };
+		B20CADC01CAFB65B00974F05 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		B20CADC11CAFB65B00974F05 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 		B24B73C01C9003E00070F25E /* ActionDescrptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionDescrptionViewController.h; sourceTree = "<group>"; };
 		B24B73C11C9003E00070F25E /* ActionDescrptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionDescrptionViewController.m; sourceTree = "<group>"; };
 		B24B73C41C90043B0070F25E /* AttributeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeConfig.h; sourceTree = "<group>"; };
@@ -246,35 +274,10 @@
 		B27B9BDF1C86E66200EF0BE8 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
 		B27B9BE11C86E80A00EF0BE8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B27B9BE31C86E81F00EF0BE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B2823A7B1CA5496200861676 /* STAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAlertView.h; sourceTree = "<group>"; };
-		B2823A7C1CA5496200861676 /* STAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAlertView.m; sourceTree = "<group>"; };
-		B2823A7D1CA5496200861676 /* STIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STIndicatorView.h; sourceTree = "<group>"; };
-		B2823A7E1CA5496200861676 /* STIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STIndicatorView.m; sourceTree = "<group>"; };
-		B2823A7F1CA5496200861676 /* STPhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPhotoBrowserController.h; sourceTree = "<group>"; };
-		B2823A801CA5496200861676 /* STPhotoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPhotoBrowserController.m; sourceTree = "<group>"; };
-		B2823A811CA5496200861676 /* STPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPhotoBrowserView.h; sourceTree = "<group>"; };
-		B2823A821CA5496200861676 /* STPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPhotoBrowserView.m; sourceTree = "<group>"; };
-		B2B675301CA8CD9300F23E3A /* ShowBigImageBrowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowBigImageBrowerViewController.h; sourceTree = "<group>"; };
-		B2B675311CA8CD9300F23E3A /* ShowBigImageBrowerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowBigImageBrowerViewController.m; sourceTree = "<group>"; };
 		B2E0AB841C7DC145000DBA5E /* CYLTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarControllerConfig.h; sourceTree = "<group>"; };
 		B2E0AB851C7DC145000DBA5E /* CYLTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarControllerConfig.m; sourceTree = "<group>"; };
 		B2E0AB871C7DC323000DBA5E /* CYLPlusButtonSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButtonSubclass.h; sourceTree = "<group>"; };
 		B2E0AB881C7DC323000DBA5E /* CYLPlusButtonSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButtonSubclass.m; sourceTree = "<group>"; };
-		B2E636D51CA23AC600E47D66 /* STConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConfig.h; sourceTree = "<group>"; };
-		B2E636D61CA23AC600E47D66 /* STConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConst.h; sourceTree = "<group>"; };
-		B2E636D71CA23AC600E47D66 /* STConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STConst.m; sourceTree = "<group>"; };
-		B2E636D81CA23AC600E47D66 /* STUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUI.h; sourceTree = "<group>"; };
-		B2E636D91CA23AC600E47D66 /* STUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUI.m; sourceTree = "<group>"; };
-		B2E636DA1CA23AC600E47D66 /* UIImage+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ST.h"; sourceTree = "<group>"; };
-		B2E636DB1CA23AC600E47D66 /* UIImage+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ST.m"; sourceTree = "<group>"; };
-		B2E636DC1CA23AC600E47D66 /* UIView+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ST.h"; sourceTree = "<group>"; };
-		B2E636DD1CA23AC600E47D66 /* UIView+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ST.m"; sourceTree = "<group>"; };
-		B2E636DF1CA23AC600E47D66 /* STPhotoKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPhotoKitController.h; sourceTree = "<group>"; };
-		B2E636E01CA23AC600E47D66 /* STPhotoKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPhotoKitController.m; sourceTree = "<group>"; };
-		B2E636E11CA23AC600E47D66 /* UIImagePickerController+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+ST.h"; sourceTree = "<group>"; };
-		B2E636E21CA23AC600E47D66 /* UIImagePickerController+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+ST.m"; sourceTree = "<group>"; };
-		B2E636E91CA23AEA00E47D66 /* ImageSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSelectViewController.h; sourceTree = "<group>"; };
-		B2E636EA1CA23AEA00E47D66 /* ImageSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSelectViewController.m; sourceTree = "<group>"; };
 		B393EBBE4A820C0DDA501D72 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -299,6 +302,49 @@
 				9C1D351131C430CBB4579E0C /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B20CAD981CAFB4FD00974F05 /* STConfig */ = {
+			isa = PBXGroup;
+			children = (
+				B20CAD991CAFB4FD00974F05 /* STConfig.h */,
+				B20CAD9A1CAFB4FD00974F05 /* STConst.h */,
+				B20CAD9B1CAFB4FD00974F05 /* STConst.m */,
+				B20CAD9C1CAFB4FD00974F05 /* STUI.h */,
+				B20CAD9D1CAFB4FD00974F05 /* STUI.m */,
+				B20CAD9E1CAFB4FD00974F05 /* UIImage+ST.h */,
+				B20CAD9F1CAFB4FD00974F05 /* UIImage+ST.m */,
+				B20CADA01CAFB4FD00974F05 /* UIView+ST.h */,
+				B20CADA11CAFB4FD00974F05 /* UIView+ST.m */,
+			);
+			path = STConfig;
+			sourceTree = "<group>";
+		};
+		B20CADA61CAFB50600974F05 /* STPhotoKit */ = {
+			isa = PBXGroup;
+			children = (
+				B20CADA71CAFB50600974F05 /* STPhotoKitController.h */,
+				B20CADA81CAFB50600974F05 /* STPhotoKitController.mm */,
+				B20CADA91CAFB50600974F05 /* UIImagePickerController+ST.h */,
+				B20CADAA1CAFB50600974F05 /* UIImagePickerController+ST.m */,
+			);
+			path = STPhotoKit;
+			sourceTree = "<group>";
+		};
+		B20CADAD1CAFB53A00974F05 /* STPhotoBrowserView */ = {
+			isa = PBXGroup;
+			children = (
+				B20CADAE1CAFB53A00974F05 /* STAlertView.h */,
+				B20CADAF1CAFB53A00974F05 /* STAlertView.mm */,
+				B20CADB01CAFB53A00974F05 /* STIndicatorView.h */,
+				B20CADB11CAFB53A00974F05 /* STIndicatorView.mm */,
+				B20CADB21CAFB53A00974F05 /* STPhotoBrowserController.h */,
+				B20CADB31CAFB53A00974F05 /* STPhotoBrowserController.mm */,
+				B20CADB41CAFB53A00974F05 /* STPhotoBrowserView.h */,
+				B20CADB51CAFB53A00974F05 /* STPhotoBrowserView.mm */,
+			);
+			name = STPhotoBrowserView;
+			path = STPhotoKit/STPhotoBrowserView;
 			sourceTree = "<group>";
 		};
 		B24B73C31C90043B0070F25E /* FastTextView */ = {
@@ -380,7 +426,9 @@
 				B2503C451C7C440100AFC297 /* Info.plist */,
 				B2503C351C7C440100AFC297 /* main.m */,
 				B2503D9A1C7D447D00AFC297 /* ReadMe */,
-				B2E636D31CA23AC600E47D66 /* carmeImageSelect */,
+				B20CADAD1CAFB53A00974F05 /* STPhotoBrowserView */,
+				B20CADA61CAFB50600974F05 /* STPhotoKit */,
+				B20CAD981CAFB4FD00974F05 /* STConfig */,
 				B24B73C31C90043B0070F25E /* FastTextView */,
 				B27B9BDD1C86E66200EF0BE8 /* AudioStreamer */,
 				B27B9BCA1C85513100EF0BE8 /* JMRoundedCorner */,
@@ -610,10 +658,12 @@
 				B27B9BC51C85479300EF0BE8 /* ListViewController.m */,
 				B24B73C01C9003E00070F25E /* ActionDescrptionViewController.h */,
 				B24B73C11C9003E00070F25E /* ActionDescrptionViewController.m */,
-				B2E636E91CA23AEA00E47D66 /* ImageSelectViewController.h */,
-				B2E636EA1CA23AEA00E47D66 /* ImageSelectViewController.m */,
-				B2B675301CA8CD9300F23E3A /* ShowBigImageBrowerViewController.h */,
-				B2B675311CA8CD9300F23E3A /* ShowBigImageBrowerViewController.m */,
+				B20CADBA1CAFB5E000974F05 /* ShowBigImageBrowerViewController.mm */,
+				B20CADBB1CAFB5E000974F05 /* ShowBigImageBrowerViewController.h */,
+				B20CADBC1CAFB5E000974F05 /* ImageSelectViewController.mm */,
+				B20CADBD1CAFB5E000974F05 /* ImageSelectViewController.h */,
+				B20CADC01CAFB65B00974F05 /* TestVC.h */,
+				B20CADC11CAFB65B00974F05 /* TestVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -636,59 +686,6 @@
 				B27B9BDF1C86E66200EF0BE8 /* AudioStreamer.m */,
 			);
 			path = AudioStreamer;
-			sourceTree = "<group>";
-		};
-		B2823A7A1CA5496200861676 /* STPhotoBrowserView */ = {
-			isa = PBXGroup;
-			children = (
-				B2823A7B1CA5496200861676 /* STAlertView.h */,
-				B2823A7C1CA5496200861676 /* STAlertView.m */,
-				B2823A7D1CA5496200861676 /* STIndicatorView.h */,
-				B2823A7E1CA5496200861676 /* STIndicatorView.m */,
-				B2823A7F1CA5496200861676 /* STPhotoBrowserController.h */,
-				B2823A801CA5496200861676 /* STPhotoBrowserController.m */,
-				B2823A811CA5496200861676 /* STPhotoBrowserView.h */,
-				B2823A821CA5496200861676 /* STPhotoBrowserView.m */,
-			);
-			name = STPhotoBrowserView;
-			path = ../STPhotoBrowserView;
-			sourceTree = "<group>";
-		};
-		B2E636D31CA23AC600E47D66 /* carmeImageSelect */ = {
-			isa = PBXGroup;
-			children = (
-				B2823A7A1CA5496200861676 /* STPhotoBrowserView */,
-				B2E636D41CA23AC600E47D66 /* STConfig */,
-				B2E636DE1CA23AC600E47D66 /* STPhotoKit */,
-			);
-			path = carmeImageSelect;
-			sourceTree = "<group>";
-		};
-		B2E636D41CA23AC600E47D66 /* STConfig */ = {
-			isa = PBXGroup;
-			children = (
-				B2E636D51CA23AC600E47D66 /* STConfig.h */,
-				B2E636D61CA23AC600E47D66 /* STConst.h */,
-				B2E636D71CA23AC600E47D66 /* STConst.m */,
-				B2E636D81CA23AC600E47D66 /* STUI.h */,
-				B2E636D91CA23AC600E47D66 /* STUI.m */,
-				B2E636DA1CA23AC600E47D66 /* UIImage+ST.h */,
-				B2E636DB1CA23AC600E47D66 /* UIImage+ST.m */,
-				B2E636DC1CA23AC600E47D66 /* UIView+ST.h */,
-				B2E636DD1CA23AC600E47D66 /* UIView+ST.m */,
-			);
-			path = STConfig;
-			sourceTree = "<group>";
-		};
-		B2E636DE1CA23AC600E47D66 /* STPhotoKit */ = {
-			isa = PBXGroup;
-			children = (
-				B2E636DF1CA23AC600E47D66 /* STPhotoKitController.h */,
-				B2E636E01CA23AC600E47D66 /* STPhotoKitController.m */,
-				B2E636E11CA23AC600E47D66 /* UIImagePickerController+ST.h */,
-				B2E636E21CA23AC600E47D66 /* UIImagePickerController+ST.m */,
-			);
-			path = STPhotoKit;
 			sourceTree = "<group>";
 		};
 		BC5B6F914BD04A4BA3EBCBF5 /* Frameworks */ = {
@@ -828,23 +825,21 @@
 				B24B73EA1C90043B0070F25E /* TextAttchment.m in Sources */,
 				B2503D0F1C7C4BCE00AFC297 /* GiFHUD.m in Sources */,
 				B24B73E31C90043B0070F25E /* FastTextStorage.m in Sources */,
-				B2823A851CA5496200861676 /* STPhotoBrowserController.m in Sources */,
+				B20CADBE1CAFB5E000974F05 /* ShowBigImageBrowerViewController.mm in Sources */,
 				B24B73E01C90043B0070F25E /* AttributeConfig.m in Sources */,
 				B2503D0E1C7C4BCE00AFC297 /* EmptyView.m in Sources */,
 				B24B73ED1C90043B0070F25E /* UIFont+TextUtil.m in Sources */,
 				B2503CC51C7C466000AFC297 /* LoginViewController.m in Sources */,
 				B2503D151C7C4BCE00AFC297 /* NSDictionary+jsonString.m in Sources */,
 				B2503CA31C7C466000AFC297 /* BaseCell.m in Sources */,
-				B2E636E41CA23AC600E47D66 /* STUI.m in Sources */,
+				B20CADA31CAFB4FD00974F05 /* STUI.m in Sources */,
 				B2503D081C7C4BCE00AFC297 /* CaloriesCalculate.mm in Sources */,
 				B2E0AB861C7DC145000DBA5E /* CYLTabBarControllerConfig.m in Sources */,
 				B2503CA71C7C466000AFC297 /* BaseViewController.m in Sources */,
 				B24B73E11C90043B0070F25E /* CAParagraphLayer.m in Sources */,
 				B2503D171C7C4BCE00AFC297 /* NSTimer+IOSUtils.m in Sources */,
 				B24B73EB1C90043B0070F25E /* TextParagraph.m in Sources */,
-				B2E636E51CA23AC600E47D66 /* UIImage+ST.m in Sources */,
-				B2823A831CA5496200861676 /* STAlertView.m in Sources */,
-				B2823A861CA5496200861676 /* STPhotoBrowserView.m in Sources */,
+				B20CADA41CAFB4FD00974F05 /* UIImage+ST.m in Sources */,
 				B2503C391C7C440100AFC297 /* AppDelegate.m in Sources */,
 				B24B73E61C90043B0070F25E /* NSAttributedString+TextUtil.m in Sources */,
 				B27B9BD01C85513100EF0BE8 /* UIView+RoundedCorner.m in Sources */,
@@ -852,7 +847,8 @@
 				B25BC8D61C7FFB54007E8122 /* FirstViewController.m in Sources */,
 				B27B9BC91C8548A600EF0BE8 /* ListCell.m in Sources */,
 				B2503D1B1C7C4BCE00AFC297 /* SFHFKeychainUtils.m in Sources */,
-				B2E636E71CA23AC600E47D66 /* STPhotoKitController.m in Sources */,
+				B20CADAB1CAFB50600974F05 /* STPhotoKitController.mm in Sources */,
+				B20CADB81CAFB53A00974F05 /* STPhotoBrowserController.mm in Sources */,
 				B2503D1C1C7C4BCE00AFC297 /* Singleton.m in Sources */,
 				B2503D201C7C4BCE00AFC297 /* UIImageView+LBBlurredImage.m in Sources */,
 				B25BC8D31C7FFB49007E8122 /* HomeViewController.m in Sources */,
@@ -869,41 +865,43 @@
 				B24B73F01C9004A60070F25E /* TextConfig.m in Sources */,
 				B2503D1A1C7C4BCE00AFC297 /* PublicInterface.m in Sources */,
 				B2503D071C7C4BCE00AFC297 /* BKTextView.m in Sources */,
-				B2823A841CA5496200861676 /* STIndicatorView.m in Sources */,
 				B24B73E91C90043B0070F25E /* TestViewController.m in Sources */,
-				B2B675321CA8CD9300F23E3A /* ShowBigImageBrowerViewController.m in Sources */,
 				B2503D8D1C7C614400AFC297 /* SpeedXLocationManager.m in Sources */,
 				B2503D1E1C7C4BCE00AFC297 /* UIColor+IOSUtils.m in Sources */,
 				B27B9BE01C86E66200EF0BE8 /* AudioStreamer.m in Sources */,
+				B20CADC21CAFB65B00974F05 /* TestVC.m in Sources */,
 				B25BC8CC1C7FFB04007E8122 /* HomeCell.m in Sources */,
 				B24B73F31C9005830070F25E /* UIImage-Extensions.m in Sources */,
 				B2503D1F1C7C4BCE00AFC297 /* UIImage+IOSUtils.m in Sources */,
 				B2503D141C7C4BCE00AFC297 /* NSDate+IOSUtils.m in Sources */,
-				B2E636E61CA23AC600E47D66 /* UIView+ST.m in Sources */,
+				B20CADA51CAFB4FD00974F05 /* UIView+ST.m in Sources */,
 				B27B9BC61C85479300EF0BE8 /* ListViewController.m in Sources */,
 				B2503D9E1C7D46F800AFC297 /* RegisterViewController.m in Sources */,
 				B2503CA61C7C466000AFC297 /* BaseModel.m in Sources */,
 				B24B73F81C901B390070F25E /* SlideAttachmentCell.m in Sources */,
 				B24B73E71C90043B0070F25E /* NSCharacterSet+EmojiAdditions.m in Sources */,
 				B2503D111C7C4BCE00AFC297 /* NetworkManager.m in Sources */,
-				B2E636EB1CA23AEA00E47D66 /* ImageSelectViewController.m in Sources */,
 				B2503D0C1C7C4BCE00AFC297 /* DJTextField.m in Sources */,
 				B24B73E81C90043B0070F25E /* NSMutableAttributedString+TextUtil.m in Sources */,
 				B2503CC41C7C466000AFC297 /* LoginModel.m in Sources */,
-				B2E636E81CA23AC600E47D66 /* UIImagePickerController+ST.m in Sources */,
+				B20CADAC1CAFB50600974F05 /* UIImagePickerController+ST.m in Sources */,
 				B2503D211C7C4BCE00AFC297 /* UIView+Utils.m in Sources */,
-				B2E636E31CA23AC600E47D66 /* STConst.m in Sources */,
+				B20CADA21CAFB4FD00974F05 /* STConst.m in Sources */,
 				B27B9BCF1C85513100EF0BE8 /* UIImage+RoundedCorner.m in Sources */,
+				B20CADB61CAFB53A00974F05 /* STAlertView.mm in Sources */,
 				B24B73E41C90043B0070F25E /* FastTextView.m in Sources */,
 				B2E0AB891C7DC323000DBA5E /* CYLPlusButtonSubclass.m in Sources */,
+				B20CADB71CAFB53A00974F05 /* STIndicatorView.mm in Sources */,
 				B24B73EC1C90043B0070F25E /* UIColor+TextUtil.m in Sources */,
 				B2503D0B1C7C4BCE00AFC297 /* DJLabel.m in Sources */,
+				B20CADBF1CAFB5E000974F05 /* ImageSelectViewController.mm in Sources */,
 				B2503D161C7C4BCE00AFC297 /* NSString+IOSUtils.m in Sources */,
 				B2503D1D1C7C4BCE00AFC297 /* Tooles.m in Sources */,
 				B2503D0A1C7C4BCE00AFC297 /* DeviceUtility.m in Sources */,
 				B2503CC31C7C466000AFC297 /* LoginCell.m in Sources */,
 				B24B73C21C9003E00070F25E /* ActionDescrptionViewController.m in Sources */,
 				B25BC8CD1C7FFB04007E8122 /* HomeModel.m in Sources */,
+				B20CADB91CAFB53A00974F05 /* STPhotoBrowserView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -946,7 +944,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -983,7 +981,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
