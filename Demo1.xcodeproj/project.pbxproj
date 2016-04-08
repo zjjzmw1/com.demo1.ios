@@ -96,6 +96,10 @@
 		B27B9BE41C86E81F00EF0BE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27B9BE31C86E81F00EF0BE8 /* CoreGraphics.framework */; };
 		B2E0AB861C7DC145000DBA5E /* CYLTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0AB851C7DC145000DBA5E /* CYLTabBarControllerConfig.m */; };
 		B2E0AB891C7DC323000DBA5E /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0AB881C7DC323000DBA5E /* CYLPlusButtonSubclass.m */; };
+		FF6C72D61CB79F5E00FDF189 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6C72D51CB79F5E00FDF189 /* UIKit.framework */; };
+		FF6C72D81CB79F6900FDF189 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6C72D71CB79F6900FDF189 /* MapKit.framework */; };
+		FF6C72E21CB7B35F00FDF189 /* Test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C72E11CB7B35F00FDF189 /* Test1.swift */; };
+		FF6C72E41CB7B53300FDF189 /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C72E31CB7B53300FDF189 /* Polyline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -279,6 +283,11 @@
 		B2E0AB871C7DC323000DBA5E /* CYLPlusButtonSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButtonSubclass.h; sourceTree = "<group>"; };
 		B2E0AB881C7DC323000DBA5E /* CYLPlusButtonSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButtonSubclass.m; sourceTree = "<group>"; };
 		B393EBBE4A820C0DDA501D72 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6C72CE1CB791F600FDF189 /* Demo1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo1-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF6C72D51CB79F5E00FDF189 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF6C72D71CB79F6900FDF189 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FF6C72E11CB7B35F00FDF189 /* Test1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test1.swift; sourceTree = "<group>"; };
+		FF6C72E31CB7B53300FDF189 /* Polyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Polyline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +295,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6C72D81CB79F6900FDF189 /* MapKit.framework in Frameworks */,
+				FF6C72D61CB79F5E00FDF189 /* UIKit.framework in Frameworks */,
 				B27B9BE41C86E81F00EF0BE8 /* CoreGraphics.framework in Frameworks */,
 				B27B9BE21C86E80A00EF0BE8 /* AudioToolbox.framework in Frameworks */,
 				8B0C26A2DD9F0B31DE208CCA /* libPods.a in Frameworks */,
@@ -664,6 +675,9 @@
 				B20CADBD1CAFB5E000974F05 /* ImageSelectViewController.h */,
 				B20CADC01CAFB65B00974F05 /* TestVC.h */,
 				B20CADC11CAFB65B00974F05 /* TestVC.m */,
+				FF6C72E31CB7B53300FDF189 /* Polyline.swift */,
+				FF6C72E11CB7B35F00FDF189 /* Test1.swift */,
+				FF6C72CE1CB791F600FDF189 /* Demo1-Bridging-Header.h */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -691,6 +705,8 @@
 		BC5B6F914BD04A4BA3EBCBF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF6C72D71CB79F6900FDF189 /* MapKit.framework */,
+				FF6C72D51CB79F5E00FDF189 /* UIKit.framework */,
 				B27B9BE31C86E81F00EF0BE8 /* CoreGraphics.framework */,
 				B27B9BE11C86E80A00EF0BE8 /* AudioToolbox.framework */,
 				B393EBBE4A820C0DDA501D72 /* libPods.a */,
@@ -727,6 +743,7 @@
 		B2503C291C7C440100AFC297 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = shandandan;
 				TargetAttributes = {
@@ -822,6 +839,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B25BC8D91C7FFB5D007E8122 /* SecondViewController.m in Sources */,
+				FF6C72E21CB7B35F00FDF189 /* Test1.swift in Sources */,
 				B24B73EA1C90043B0070F25E /* TextAttchment.m in Sources */,
 				B2503D0F1C7C4BCE00AFC297 /* GiFHUD.m in Sources */,
 				B24B73E31C90043B0070F25E /* FastTextStorage.m in Sources */,
@@ -859,6 +877,7 @@
 				B2503D101C7C4BCE00AFC297 /* MCSegmentedControl.m in Sources */,
 				B2503D131C7C4BCE00AFC297 /* NSData+DictOrArray.m in Sources */,
 				B2503D8A1C7C614400AFC297 /* RequestBaseManager.m in Sources */,
+				FF6C72E41CB7B53300FDF189 /* Polyline.swift in Sources */,
 				B2503D091C7C4BCE00AFC297 /* CLLocation+Sino.m in Sources */,
 				B2503D191C7C4BCE00AFC297 /* ProgressHUD.m in Sources */,
 				B2503D0D1C7C4BCE00AFC297 /* DrawTool.mm in Sources */,
@@ -994,11 +1013,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Demo1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo1.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo1/Home/ViewController/Demo1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -1008,11 +1030,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Demo1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo1.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo1/Home/ViewController/Demo1-Bridging-Header.h";
 			};
 			name = Release;
 		};
