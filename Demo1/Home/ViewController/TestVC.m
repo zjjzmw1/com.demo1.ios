@@ -12,6 +12,9 @@
 
 #import "Demo1-Swift.h"
 
+
+#import "Polyline.h"
+
 @implementation TestVC
 
 -(void)viewDidLoad{
@@ -30,33 +33,32 @@
 //    }
     
     
-    Polyline *p = [[Polyline alloc]init];
 
 
 //    NSMutableArray *arr =  Polyline.decodePolyline(encodedPolyline);
 //    Polyline deco
     
-    Test1 *t = [[Test1 alloc]init];
+//    Test1 *t = [[Test1 alloc]init];
     
 //    NSString *res =  [t testAction2:@"sdfdg"];
 //   NSString *d = [Polyline dddd:@"ddddsf"];
-    CLLocationCoordinate2D cl = CLLocationCoordinate2DMake(11, 12);
-    
-    NSValue *value = [NSValue valueWithMKCoordinate:cl];
-    
-    NSMutableArray *ar = [NSMutableArray array];
-    [ar addObject:value];
+//    CLLocationCoordinate2D cl = CLLocationCoordinate2DMake(11, 12);
+//    
+//    NSValue *value = [NSValue valueWithMKCoordinate:cl];
+//    
+//    NSMutableArray *ar = [NSMutableArray array];
+//    [ar addObject:value];
 
-   NSArray *arry = [NSArray arrayWithArray:[Polyline decodePolyline:encodedPolyline precision:100*1000]];
+//   NSArray *arry = [NSArray arrayWithArray:[Polyline decodePolyline:encodedPolyline precision:100*1000]];
     
-    
+    Polyline *p = [[Polyline alloc]init];
+    NSArray *arry =  [p decodePolyline:encodedPolyline precision:100*1000];
+
     for (int i = 0; i <arry.count; i++) {
         CLLocationCoordinate2D last = [(NSValue *)arry[i] MKCoordinateValue];
         NSLog(@"res====%f,,,%f",last.latitude,last.longitude);
     }
-   
-    
-    
+
 }
 
 @end
