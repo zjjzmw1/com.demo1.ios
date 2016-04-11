@@ -6,11 +6,10 @@
 //  Copyright © 2015 Machometus. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import MapKit
 
-@objc class Polyline: NSObject {
+@objc class Polyline3: NSObject {
     
     // Polyline error type
     
@@ -20,27 +19,6 @@ import MapKit
         case ChunkExtractingError
         
     }
-    
-    
-    
-    
-    
-    class func dddd(dd:String,xx:Double) -> [Int]?{
-        return nil
-    }
-    
-    class func eeee(dd:String,xx:CLLocationCoordinate2D) -> [Int]?{
-        return nil
-    }
-    
-    class func ffff(dd:String,xx:Double) -> [CLLocationCoordinate2D]?{
-        return nil
-    }
-    
-    
-    
-    
-    
     
     // Decode google maps polyline string to coordinate
     
@@ -82,10 +60,7 @@ import MapKit
     
     // Decode array of google maps polyline string to an array of coordinates
     
-    
-    
-    
-    class func decodePolyline(encodedPolyline: String, precision: Double = 1e5) -> [NSValue]? {
+    class func decodePolyline(encodedPolyline: String, precision: Double = 1e5) -> [CLLocationCoordinate2D]? {
         
         let data = encodedPolyline.dataUsingEncoding(NSUTF8StringEncoding)!
         
@@ -93,8 +68,7 @@ import MapKit
         let length = Int(data.length)
         var position = Int(0)
         
-//        var decodedCoordinates = [CLLocationCoordinate2D]()
-        var result = [NSValue]()
+        var decodedCoordinates = [CLLocationCoordinate2D]()
         
         var lat = 0.0
         var lon = 0.0
@@ -102,27 +76,18 @@ import MapKit
         while position < length {
             
             do {
-                
                 let resultingLat = try decodeSingleCoordinate(byteArray: byteArray, length: length, position: &position, precision: precision)
                 lat += resultingLat
                 
                 let resultingLon = try decodeSingleCoordinate(byteArray: byteArray, length: length, position: &position, precision: precision)
                 lon += resultingLon
-                
             }
             catch {
                 return nil
             }
-            
-//            decodedCoordinates.append(CLLocationCoordinate2D(latitude: lat, longitude: lon))
-            
-            result.append(NSValue.init(MKCoordinate: CLLocationCoordinate2D(latitude: lat, longitude: lon)))
-
+            decodedCoordinates.append(CLLocationCoordinate2D(latitude: lat, longitude: lon))
         }
-        
-        return result
-
-//        return decodedCoordinates
+        return decodedCoordinates
     }
     
 }

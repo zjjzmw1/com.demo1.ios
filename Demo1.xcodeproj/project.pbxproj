@@ -100,8 +100,8 @@
 		FF6C72D81CB79F6900FDF189 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6C72D71CB79F6900FDF189 /* MapKit.framework */; };
 		FF6C72E21CB7B35F00FDF189 /* Test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C72E11CB7B35F00FDF189 /* Test1.swift */; };
 		FF6C72E71CB7C3B800FDF189 /* Polyline.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6C72E61CB7C3B800FDF189 /* Polyline.m */; };
-		FF6C72EA1CB7EA7600FDF189 /* Polyline2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C72E81CB7EA7600FDF189 /* Polyline2.swift */; };
-		FF6C72EB1CB7EA7600FDF189 /* Polyline3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C72E91CB7EA7600FDF189 /* Polyline3.swift */; };
+		FF6C72EA1CB7EA7600FDF189 /* PolylineOcType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C72E81CB7EA7600FDF189 /* PolylineOcType.swift */; };
+		FF6C72EB1CB7EA7600FDF189 /* PolylineOriginal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C72E91CB7EA7600FDF189 /* PolylineOriginal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -291,8 +291,8 @@
 		FF6C72E11CB7B35F00FDF189 /* Test1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test1.swift; sourceTree = "<group>"; };
 		FF6C72E51CB7C3B800FDF189 /* Polyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polyline.h; sourceTree = "<group>"; };
 		FF6C72E61CB7C3B800FDF189 /* Polyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Polyline.m; sourceTree = "<group>"; };
-		FF6C72E81CB7EA7600FDF189 /* Polyline2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Polyline2.swift; sourceTree = "<group>"; };
-		FF6C72E91CB7EA7600FDF189 /* Polyline3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Polyline3.swift; sourceTree = "<group>"; };
+		FF6C72E81CB7EA7600FDF189 /* PolylineOcType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolylineOcType.swift; sourceTree = "<group>"; };
+		FF6C72E91CB7EA7600FDF189 /* PolylineOriginal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolylineOriginal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -682,8 +682,8 @@
 				B20CADC11CAFB65B00974F05 /* TestVC.m */,
 				FF6C72E51CB7C3B800FDF189 /* Polyline.h */,
 				FF6C72E61CB7C3B800FDF189 /* Polyline.m */,
-				FF6C72E81CB7EA7600FDF189 /* Polyline2.swift */,
-				FF6C72E91CB7EA7600FDF189 /* Polyline3.swift */,
+				FF6C72E81CB7EA7600FDF189 /* PolylineOcType.swift */,
+				FF6C72E91CB7EA7600FDF189 /* PolylineOriginal.swift */,
 				FF6C72E11CB7B35F00FDF189 /* Test1.swift */,
 				FF6C72CE1CB791F600FDF189 /* Demo1-Bridging-Header.h */,
 			);
@@ -866,7 +866,7 @@
 				B2503D171C7C4BCE00AFC297 /* NSTimer+IOSUtils.m in Sources */,
 				B24B73EB1C90043B0070F25E /* TextParagraph.m in Sources */,
 				B20CADA41CAFB4FD00974F05 /* UIImage+ST.m in Sources */,
-				FF6C72EA1CB7EA7600FDF189 /* Polyline2.swift in Sources */,
+				FF6C72EA1CB7EA7600FDF189 /* PolylineOcType.swift in Sources */,
 				B2503C391C7C440100AFC297 /* AppDelegate.m in Sources */,
 				B24B73E61C90043B0070F25E /* NSAttributedString+TextUtil.m in Sources */,
 				B27B9BD01C85513100EF0BE8 /* UIView+RoundedCorner.m in Sources */,
@@ -900,7 +900,7 @@
 				B20CADC21CAFB65B00974F05 /* TestVC.m in Sources */,
 				B25BC8CC1C7FFB04007E8122 /* HomeCell.m in Sources */,
 				B24B73F31C9005830070F25E /* UIImage-Extensions.m in Sources */,
-				FF6C72EB1CB7EA7600FDF189 /* Polyline3.swift in Sources */,
+				FF6C72EB1CB7EA7600FDF189 /* PolylineOriginal.swift in Sources */,
 				B2503D1F1C7C4BCE00AFC297 /* UIImage+IOSUtils.m in Sources */,
 				B2503D141C7C4BCE00AFC297 /* NSDate+IOSUtils.m in Sources */,
 				B20CADA51CAFB4FD00974F05 /* UIView+ST.m in Sources */,

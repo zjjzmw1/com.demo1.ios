@@ -6,10 +6,11 @@
 //  Copyright © 2015 Machometus. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import MapKit
 
-@objc class Polyline: NSObject {
+@objc class Polyline2: NSObject {
     
     // Polyline error type
     
@@ -59,8 +60,7 @@ import MapKit
     }
     
     // Decode array of google maps polyline string to an array of coordinates
-    
-    class func decodePolyline(encodedPolyline: String, precision: Double = 1e5) -> [CLLocationCoordinate2D]? {
+    class func decodePolyline(encodedPolyline: String, precision: Double = 1e5) -> [NSValue]? {
         
         let data = encodedPolyline.dataUsingEncoding(NSUTF8StringEncoding)!
         
@@ -68,7 +68,8 @@ import MapKit
         let length = Int(data.length)
         var position = Int(0)
         
-        var decodedCoordinates = [CLLocationCoordinate2D]()
+//        var decodedCoordinates = [CLLocationCoordinate2D]()
+        var result = [NSValue]()
         
         var lat = 0.0
         var lon = 0.0
@@ -88,10 +89,15 @@ import MapKit
                 return nil
             }
             
-            decodedCoordinates.append(CLLocationCoordinate2D(latitude: lat, longitude: lon))
+//            decodedCoordinates.append(CLLocationCoordinate2D(latitude: lat, longitude: lon))
+            
+            result.append(NSValue.init(MKCoordinate: CLLocationCoordinate2D(latitude: lat, longitude: lon)))
+
         }
         
-        return decodedCoordinates
+        return result
+
+//        return decodedCoordinates
     }
     
 }
